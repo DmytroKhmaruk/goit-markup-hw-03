@@ -25,6 +25,20 @@ body {
     font-size: 14px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+p {
+    color: var(--tittle-text-color);
+    margin: 0;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -58,6 +72,9 @@ body {
 }
 
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
     color: #ffffff;
 }
 
@@ -89,6 +106,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+.footer-link:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 
 .footer .link {
     color: rgba(255, 255, 255, 0.6);
@@ -99,14 +120,6 @@ body {
 .link:focus {
     color: var(--accent-color);
 } 
-
-a {
-    text-decoration: none;
-}
-
-p {
-    color: var(--tittle-text-color);
-}
 
 .footer {
     background-color: var(--primary-black-color);
@@ -127,8 +140,9 @@ p {
 }
 
 .hero-title {
-    margin-top: 0;
+    margin: auto;
     margin-bottom: 30px;
+    max-width: 696px;
 
     color: #ffffff;
     font-weight: 900;
@@ -154,6 +168,19 @@ p {
     cursor: pointer;
 }
 
+.benefits-list {
+    display: flex;
+}
+
+.benefit-item {
+    max-width: 270px;
+    outline: 2px solid red;
+}
+
+.benefit-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .benefit-subtitle {
     margin-top: 0;
     margin-bottom: 10px;
@@ -169,8 +196,15 @@ p {
 }
 
 /* section (чим ми займаємося) */
+.section-list {
+    display: flex;
+}
+
+.section-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section-title {
-    margin-top: 0;
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -178,8 +212,15 @@ p {
     text-align: center;
 }
 
+.team-list {
+    display: flex;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .team-title {
-    margin-top: 0;
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -188,7 +229,6 @@ p {
 }
 
 .name-title {
-    margin-top: 0;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -212,6 +252,15 @@ p {
     margin-bottom: 50px;
 }
 
+.filter-item {
+    display: inline-block;
+    
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter {
     font-weight: 500;
     font-size: 16px;
@@ -225,8 +274,20 @@ p {
     color: var(--primary-white-color);
 }
 
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    margin-right: 30px;
+}
+
+.projects-item:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
 .project-title {
-    margin-top: 0;
     margin-bottom: 20px;
 
     color: var(--primary-text-color);
