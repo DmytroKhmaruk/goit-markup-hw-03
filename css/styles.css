@@ -90,6 +90,9 @@ body {
 }
 
 /* -------------HEADER---------------- */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-container {
     display: flex;
@@ -362,12 +365,15 @@ body {
 }
 
 .filter {
-    
+    border-radius: 4px;
+    padding: 6px 22px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    background: #F5F4FA;
     cursor: pointer;
-    
+    border: none;
 }
 
 .filter:hover,
