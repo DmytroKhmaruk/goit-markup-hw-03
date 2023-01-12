@@ -82,6 +82,11 @@ body {
     overflow: hidden;
   }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -245,10 +250,6 @@ body {
     border: none;
 }
 
-.benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .benefits-list {
     display: flex;
@@ -272,30 +273,25 @@ body {
 }
 
 
-/* section (чим ми займаємося) */
-.section {
+/* section-do (чим ми займаємося) */
+.section-do {
     padding-bottom: 94px;
 }
 
-.section-list {
+.section-do-list {
     display: flex;
 }
 
-.section-item:not(:last-child) {
+.section-do-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.section-title {
+.section-do-title {
     margin-bottom: 50px;
 
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-}
-
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-list {
@@ -346,8 +342,6 @@ body {
 
 /*друга сторінка*/
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
     text-align: center;
 }   
 
